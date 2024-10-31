@@ -12,19 +12,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Service Template/Service Template.csproj", "Service Template/"]
-RUN dotnet restore "./Service Template/Service Template.csproj"
+COPY ["Service Recipe/Service Recipe.csproj", "Service Recipe/"]
+RUN dotnet restore "./Service Recipe/Service Recipe.csproj"
 COPY . .
-WORKDIR "/src/Service Template"
-RUN dotnet build "./Service Template.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Service Recipe"
+RUN dotnet build "./Service Recipe.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Service Template.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Service Recipe.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Service Template.dll"]
+ENTRYPOINT ["dotnet", "Service Recipe.dll"]
