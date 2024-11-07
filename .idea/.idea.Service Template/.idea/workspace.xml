@@ -11,19 +11,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f84419f-e21b-4d82-b5ef-4fbd2332d41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Recipe/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Recipe/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Recipe/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Service Recipe/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Recipe/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Service Recipe/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="4f84419f-e21b-4d82-b5ef-4fbd2332d41d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1730368499" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1730368498" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service Recipe/Service-Recipe/Service Recipe/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service Recipe/Service-Recipe/Service Recipe/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -42,7 +71,7 @@
     ".NET Launch Settings Profile.Service Template: http.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -142,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730365506089</updated>
-      <workItem from="1730365506729" duration="2766000" />
+      <workItem from="1730365506729" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -160,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730365680577</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed Cors and refactored UserController.cs to RecipeController.cs">
+      <option name="closed" value="true" />
+      <created>1730368569945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730368569945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +209,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Fixed Cors and refactored UserController.cs to RecipeController.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Cors and refactored UserController.cs to RecipeController.cs" />
   </component>
 </project>
