@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   service-recipe:
-    image: ghcr.io/brewing-stand/service-recipe:sha256-b6e57cc5a862000da2d1c563c25b50698b7fe059f87d8894fc1b64cbadc08732.sig  # Pulls your image from GHCR
+    image: ghcr.io/brewing-stand/service-recipe:master  # Pulls master image from GHCR
     container_name: 'Brewing-stand-Service-Recipe'
     restart: unless-stopped
     networks:
